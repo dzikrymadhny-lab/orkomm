@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Gerbang Logika pada Sistem Digital</title>
+</head>
+
+<body>
+
+<div class="presentation">
+
+<!-- =========================
+     SLIDE 1
+========================= -->
+<section class="slide active title-slide">
+
+    <div class="badge">MATERI SISTEM DIGITAL</div>
+
+    <h1>
+        Gerbang Logika<br>
+        <span class="highlight">pada Sistem Digital</span>
+    </h1>
+
+    <div class="title-line"></div>
+
+    <p class="subtitle">
+        Dasar-Dasar Logic Gate dan Penerapannya
+        pada Sistem Digital
+    </p>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 2
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 02</div>
+
+    <h2>Kelompok</h2>
+
+    <p>
+        Materi ini dipresentasikan oleh kelompok:
+    </p>
+
+    <div class="members">
+
+        <div class="member">
+            <span>01</span> — Dzikry Ramadhany
+        </div>
+
+        <div class="member">
+            <span>02</span> — Alif Surya Amza
+        </div>
+
+        <div class="member">
+            <span>03</span> — Akbar Jaya Utama
+        </div>
+
+        <div class="member">
+            <span>04</span> — M. Rafli Dzulkhairi
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 3
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 03 — PEMBAHASAN</div>
+
+    <h2>Rangkaian Digital</h2>
+
+    <p>
+        Rangkaian digital adalah rangkaian elektronik yang
+        mengolah informasi menggunakan nilai biner.
+        Sistem digital menggunakan dua kondisi utama,
+        yaitu <strong>0</strong> dan <strong>1</strong>.
+    </p>
+
+    <div class="binary">
+
+        <div class="binary-box">
+            <div class="binary-number">0</div>
+            <p>LOW / False</p>
+        </div>
+
+        <div class="binary-box">
+            <div class="binary-number">1</div>
+            <p>HIGH / True</p>
+        </div>
+
+    </div>
+
+    <p style="margin-top:25px;">
+        Rangkaian digital menjadi dasar berbagai perangkat
+        seperti komputer, smartphone, kalkulator, dan
+        sistem kontrol.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 4
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 04 — PEMBAHASAN</div>
+
+    <h2>Pengertian Gerbang Logika</h2>
+
+    <p>
+        <strong>Gerbang logika (Logic Gate)</strong> adalah
+        rangkaian elektronik yang menerima satu atau beberapa
+        input berupa 0 atau 1, kemudian menghasilkan output
+        berdasarkan aturan logika tertentu.
+    </p>
+
+    <div class="flow">
+
+        <div class="flow-box">Input</div>
+
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Gerbang Logika</div>
+
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Output</div>
+
+    </div>
+
+    <p>
+        Gerbang logika merupakan dasar sistem digital dan
+        bekerja berdasarkan prinsip <span class="highlight">
+        Aljabar Boolean</span>.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 5
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 05 — PEMBAHASAN</div>
+
+    <h2>Jenis Gerbang Logika</h2>
+
+    <p>
+        Terdapat beberapa gerbang logika yang umum digunakan
+        dalam sistem digital.
+    </p>
+
+    <div class="gates">
+
+        <div class="gate">
+            <div class="gate-name">AND</div>
+            <p>Semua input harus bernilai 1.</p>
+        </div>
+
+        <div class="gate">
+            <div class="gate-name">OR</div>
+            <p>Minimal satu input bernilai 1.</p>
+        </div>
+
+        <div class="gate">
+            <div class="gate-name">NOT</div>
+            <p>Membalik nilai input.</p>
+        </div>
+
+        <div class="gate">
+            <div class="gate-name">NAND</div>
+            <p>Kebalikan dari AND.</p>
+        </div>
+
+        <div class="gate">
+            <div class="gate-name">NOR</div>
+            <p>Kebalikan dari OR.</p>
+        </div>
+
+        <div class="gate">
+            <div class="gate-name">XOR</div>
+            <p>Output 1 jika input berbeda.</p>
+        </div>
+
+        <div class="gate">
+            <div class="gate-name">XNOR</div>
+            <p>Output 1 jika input sama.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 6
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 06 — PEMBAHASAN</div>
+
+    <h2>Gerbang AND</h2>
+
+    <p>
+        Gerbang AND menghasilkan output 1 hanya jika
+        <strong>semua input bernilai 1</strong>.
+    </p>
+
+    <div class="formula">
+        Y = A · B
+    </div>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Y = A · B</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td><strong>1</strong></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <p style="margin-top:20px;">
+        <span class="highlight">Kesimpulan:</span>
+        output AND bernilai 1 hanya ketika kedua input
+        bernilai 1.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 7
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 07 — PEMBAHASAN</div>
+
+    <h2>Gerbang Logika Lainnya</h2>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Gerbang</th>
+                    <th>Fungsi</th>
+                    <th>Output 1 ketika</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><strong>OR</strong></td>
+                    <td>A + B</td>
+                    <td>Minimal satu input 1</td>
+                </tr>
+
+                <tr>
+                    <td><strong>NOT</strong></td>
+                    <td>¬A</td>
+                    <td>Input bernilai 0</td>
+                </tr>
+
+                <tr>
+                    <td><strong>NAND</strong></td>
+                    <td>¬(A · B)</td>
+                    <td>Tidak semua input 1</td>
+                </tr>
+
+                <tr>
+                    <td><strong>NOR</strong></td>
+                    <td>¬(A + B)</td>
+                    <td>Semua input 0</td>
+                </tr>
+
+                <tr>
+                    <td><strong>XOR</strong></td>
+                    <td>A ⊕ B</td>
+                    <td>Input berbeda</td>
+                </tr>
+
+                <tr>
+                    <td><strong>XNOR</strong></td>
+                    <td>¬(A ⊕ B)</td>
+                    <td>Input sama</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 8
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 08 — PEMBAHASAN</div>
+
+    <h2>Penerapan Gerbang Logika</h2>
+
+    <p>
+        Gerbang logika digunakan dalam berbagai teknologi
+        dan sistem elektronik.
+    </p>
+
+    <div class="application-grid">
+
+        <div class="app">
+            <div class="icon">▣</div>
+            <h3>CPU & Prosesor</h3>
+            <p>Memproses operasi logika dan aritmatika.</p>
+        </div>
+
+        <div class="app">
+            <div class="icon">▤</div>
+            <h3>Memori</h3>
+            <p>Menyimpan dan mengolah data digital.</p>
+        </div>
+
+        <div class="app">
+            <div class="icon">▦</div>
+            <h3>Kalkulator</h3>
+            <p>Melakukan perhitungan berdasarkan logika digital.</p>
+        </div>
+
+        <div class="app">
+            <div class="icon">⚠</div>
+            <h3>Sistem Alarm</h3>
+            <p>Mendeteksi kondisi tertentu dan mengaktifkan alarm.</p>
+        </div>
+
+        <div class="app">
+            <div class="icon">⚙</div>
+            <h3>Robotika</h3>
+            <p>Mengolah input sensor untuk menentukan tindakan.</p>
+        </div>
+
+        <div class="app">
+            <div class="icon">◉</div>
+            <h3>Sistem Kontrol</h3>
+            <p>Mengatur perangkat secara otomatis berdasarkan kondisi.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 9
+========================= -->
+<section class="slide">
+
+    <div class="badge">SLIDE 09 — CONTOH</div>
+
+    <h2>Contoh Rangkaian Logika</h2>
+
+    <p>
+        Salah satu contoh sederhana adalah penggunaan
+        gerbang AND pada sistem alarm.
+    </p>
+
+    <div class="alarm-box">
+
+        <div class="sensor-row">
+
+            <div class="sensor">
+                Sensor A<br>
+                <span class="highlight">Aktif</span>
+            </div>
+
+            <div class="arrow">+</div>
+
+            <div class="sensor">
+                Sensor B<br>
+                <span class="highlight">Aktif</span>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="and-gate">
+                AND
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="alarm">
+                🔔 ALARM AKTIF
+            </div>
+
+        </div>
+
+        <p>
+            Karena menggunakan gerbang AND, alarm akan aktif
+            apabila <strong>Sensor A dan Sensor B sama-sama
+            aktif</strong>.
+        </p>
+
+    </div>
+
+    <div style="margin-top:25px;">
+
+        <p>
+            <span class="highlight">A = 1</span> dan
+            <span class="highlight">B = 1</span>
+        </p>
+
+        <div class="formula">
+            Y = A · B = 1 · 1 = 1
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 10
+========================= -->
+<section class="slide thanks">
+
+    <div class="badge">SLIDE 10</div>
+
+    <h1>
+        Terima <span class="highlight">Kasih</span>
+    </h1>
+
+    <p>
+        Semoga materi mengenai Gerbang Logika pada Sistem Digital
+        dapat dipahami dengan baik.
+    </p>
+
+    <div class="title-line"></div>
+
+    <p>
+        <strong>Any Questions?</strong>
+    </p>
+
+</section>
+
+</div>
+
+
+<!-- =========================
+     CONTROLS
+========================= -->
+
+<div class="fullscreen">
+    <button onclick="toggleFullscreen()">
+        ⛶ Fullscreen
+    </button>
+</div>
+
+<div class="slide-number">
+    <span id="current">1</span> / 10
+</div>
+
+<div class="controls">
+
+    <button class="control-btn" onclick="previousSlide()">
+        ←
+    </button>
+
+    <button class="control-btn" onclick="nextSlide()">
+        →
+    </button>
+
+</div>
+
+<div class="progress" id="progress"></div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
